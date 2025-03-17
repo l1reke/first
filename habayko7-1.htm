@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для заповнення</title>
+</head>
+<body>
+    <h2>Завдання 1: Заповніть форму</h2>
+    <form action="success.html" target="_blank">
+        <p>Ваше ім'я: <input name="name" type="text" maxlength="40" size="40"></p>
+        
+        <p>Ваша стать:<br>
+            <input type="radio" name="pol" value="male"> Чоловіча<br>
+            <input type="radio" name="pol" value="female"> Жіноча
+        </p>
+        
+        <p>На якому курсі Ви навчаєтесь?
+            <select name="curs" size="1">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </p>
+        
+        <p>Які дисципліни ви вивчаєте на курсі?</p>
+        <input type="checkbox" name="web" value="yes" checked> WEB-програмування<br>
+        <input type="checkbox" name="eldinam" value="yes"> Технічна електродинаміка<br>
+        
+        <p>Напишіть декілька слів про себе:</p>
+        <textarea name="about" rows="6" cols="60"></textarea>
+        
+        <p>
+            <input type="submit" value="Відіслати">
+            <input type="reset" value="Очистити">
+        </p>
+    </form>
+</body>
+</html>
