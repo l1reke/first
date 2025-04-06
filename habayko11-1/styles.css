@@ -1,0 +1,46 @@
+body {
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    font-style: italic;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+  }
+  
+  p {
+    text-indent: 30px; /* червоний рядок */
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    color: darkblue;
+    font-style: normal;
+  }
+  
+  img.left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  
+  img.right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+  
+  a:link {
+    color: rgb(220, 255, 122);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(82, 47, 179);
+  }
+  
+  a:active {
+    color: red;
+  }
+  
