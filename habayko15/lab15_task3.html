@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 3.1 – Ділення</title>
+</head>
+<body>
+  <h1>Завдання 3.1: Ділення 10000 на 2</h1>
+  <div id="output"></div>
+
+  <script>
+    const output = document.getElementById("output");
+    function print(text) {
+      output.innerHTML += `<p>${text}</p>`;
+    }
+
+    let numb = 10000;
+    let counter = 0;
+    while (numb >= 50) {
+      numb /= 2;
+      counter++;
+    }
+    print(`Результат: ${numb}`);
+    print(`Кількість ітерацій: ${counter}`);
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 3.2–3.4 – Місяць, Температура, День</title>
+</head>
+<body>
+  <h1>Завдання 3.2–3.4</h1>
+
+  <script>
+    // 3.2
+    let month = parseInt(prompt("Завдання 3.2: Введіть номер місяця (1–12):"));
+    const months = ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень",
+                    "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"];
+    let season = "";
+    if (month >= 1 && month <= 12) {
+      if ([12, 1, 2].includes(month)) season = "Зима";
+      else if ([3, 4, 5].includes(month)) season = "Весна";
+      else if ([6, 7, 8].includes(month)) season = "Літо";
+      else season = "Осінь";
+      alert(`Місяць: ${months[month - 1]}, Пора року: ${season}`);
+    } else {
+      alert("Невірний номер місяця");
+    }
+
+    // 3.3
+    let celsius = parseFloat(prompt("Завдання 3.3: Введіть температуру у °C:"));
+    let fahrenheit = (9 / 5) * celsius + 32;
+    alert(`Температура у Фаренгейтах: ${fahrenheit.toFixed(2)} °F`);
+
+    // 3.4
+    let day = parseInt(prompt("Завдання 3.4: Введіть число від 1 до 7:"));
+    const days = ["Понеділок", "Вівторок", "Середа", "Четвер", "П’ятниця", "Субота", "Неділя"];
+    if (day >= 1 && day <= 7) {
+      document.write(`<h2>Це: ${days[day - 1]}</h2>`);
+    } else {
+      document.write("<h2>Невірне число</h2>");
+    }
+  </script>
+</body>
+</html>

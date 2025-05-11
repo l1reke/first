@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Рисунки з обробниками onclick</title>
+<style>
+  .image {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black; 
+    cursor: pointer; 
+  }
+  a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: blue;
+  }
+  b {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: blue;
+  }
+  p {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 2px solid #ccc;
+  }
+
+  input.valid {
+    border-color: green;
+  }
+
+  input.invalid {
+    border-color: red;
+  }
+</style>
+</head>
+<body>
+
+<img id="image1" class="image" src="image1.jpg" alt="Рисунок 1">
+<img id="image2" class="image" src="image2.jpg" alt="Рисунок 2">
+<img id="image3" class="image" src="image3.jpg" alt="Рисунок 3">
+
+<a id="link1" href="https://www.youtube.com/">Посилання 1</a>
+<a id="link2" href="https://classroom.google.com/u/0/h?hl=uk">Посилання 2</a>
+<a id="link3" href="https://www.google.pl/">Посилання 3</a>
+
+<input type="text" id="input1" placeholder="Введіть текст 1">
+<input type="text" id="input2" placeholder="Введіть текст 2">
+<input type="text" id="input3" placeholder="Введіть текст 3">
+
+<p id="demo"></p>
+
+<p id="paragraph1">5</p>
+<p id="paragraph2">10</p>
+<p id="paragraph3">15</p>
+
+<input type="text" id="input1" data-length="5" placeholder="Введіть 5 символів">
+<input type="text" id="input2" data-length="10" placeholder="Введіть 10 символів">
+<input type="text" id="input3" data-length="3" placeholder="Введіть 3 символи">
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+

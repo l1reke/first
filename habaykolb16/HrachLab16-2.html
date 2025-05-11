@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Перемикання кольору div</title>
+<style>
+  div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: green; 
+  }
+</style>
+</head>
+<body>
+
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+
+<script>
+  const div1 = document.getElementById('div1');
+  const div2 = document.getElementById('div2');
+  const div3 = document.getElementById('div3');
+
+  function paintRed() {
+    this.style.backgroundColor = 'red';
+    this.onclick = paintGreen; 
+  }
+
+  function paintGreen() {
+    this.style.backgroundColor = 'green';
+    this.onclick = paintRed; 
+  }
+
+  div1.onclick = paintRed;
+  div2.onclick = paintRed;
+  div3.onclick = paintRed;
+</script>
+
+</body>
+</html>

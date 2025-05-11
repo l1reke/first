@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 2 – Числа 0–10</title>
+</head>
+<body>
+  <h1>Завдання 2: Коментарі до чисел від 0 до 10</h1>
+  <div id="output"></div>
+
+  <script>
+    const output = document.getElementById("output");
+    function print(text) {
+      output.innerHTML += `<p>${text}</p>`;
+    }
+
+    let i = 0;
+    do {
+      if (i === 0) {
+        print(`${i} – це нуль`);
+      } else if (i % 2 === 0) {
+        print(`${i} – парне число`);
+      } else {
+        print(`${i} – непарне число`);
+      }
+      i++;
+    } while (i <= 10);
+  </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивна розмітка Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .block {
+            border: 1px solid lightgray;
+            padding: 100px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .block1 {
+            background-color: blue; 
+        }
+
+        .block2 {
+            background-color: yellow;
+        }
+
+        .block3 {
+            background-color: red;
+        }
+
+        @media (max-width: 1199px) and (min-width: 992px) {
+            .block1 {
+                 background-color: blue; 
+            }
+
+            .block2 {
+                 background-color: yellow;
+            }
+
+            .block3 {
+                 background-color: red;
+            }
+        }
+
+        @media (max-width: 991px) and (min-width: 768px) {
+            .block1 {
+                background-color: blue;
+            }
+
+            .block2 {
+                background-color: yellow;
+            }
+
+            .block3 {
+                background-color: red;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .block {
+                background-color: blue;
+            }
+
+            .block:nth-child(2) {
+                background-color: yellow;
+            }
+
+            .block:nth-child(3) {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6 block, col-lg-8 block, col-md-12 block, col-sm-12 block block1">#1</div>
+            <div class="col-xl-3 block, col-lg-4 block, col-md-6 block, col-sm-12 block block2">#2</div>
+            <div class="col-xl-3 block, col-lg-12 block, col-md-6 block, col-sm-12 block block3">#3</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

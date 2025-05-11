@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивна розмітка Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Загальні стилі для блоків */
+        .block {
+            border: 1px solid lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .block1 {
+            background-color: lightgoldenrodyellow; 
+        }
+
+        .block2 {
+            background-color: white;
+        }
+
+        .block3 {
+            background-color: white;
+        }
+
+        .block4 {
+            background-color: white;
+        }
+
+        .block5 {
+            background-color: white
+        }
+
+        .block6 {
+            background-color: white;
+        }
+
+        .block7 {
+            background-color: lightgoldenrodyellow;
+        }
+
+        @media (max-width: 1199px) and (min-width: 992px) {
+            .block1 {
+                 background-color: white; 
+            }
+
+            .block2 {
+                 background-color: lightcoral;
+            }
+
+            .block3 {
+                 background-color: white;
+            }
+
+            .block4 {
+                 background-color: lightcoral;
+            }
+
+            .block5 {
+                 background-color: white;
+            }
+
+            .block6 {
+                 background-color: lightcoral;
+            }
+
+            .block7 {
+                  background-color: white;
+            }  
+        }
+
+        @media (max-width: 991px) and (min-width: 768px) {
+            .block1 {
+                background-color: white;
+            }
+
+            .block2 {
+                background-color: white;
+            }
+
+            .block3 {
+                background-color: lightpink;
+            }
+
+            .block4 {
+                background-color: white;
+            }
+
+            .block5 {
+                background-color: lightpink;
+            }
+
+            .block6 {
+                background-color: white;
+            }
+
+            .block7 {
+                background-color: white;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .block {
+                background-color: white;
+            }
+
+            .block:nth-child(2) {
+                background-color: white;
+            }
+
+            .block:nth-child(3) {
+                background-color: white;
+            }
+
+            .block:nth-child(4) {
+                background-color: white;
+            }
+
+            .block:nth-child(5) {
+                background-color: white;
+            }
+
+            .block:nth-child(6) {
+                background-color: white;
+            }
+
+            .block:nth-child(7) {
+                background-color: white;
+                color: red;
+                text-indent: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-8 block, col-lg-4 block, col-md-6 block block1">Ліва частина шапки</div>
+            <div class="col-xl-4 block, col-lg-8 block, col-md-6 block block2">Права частина шапки</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-2, col-lg-2 block block3">Ліве меню</div>
+            <div class="col-xl-8, col-lg-8 block block4">Контент</div>
+            <div class="col-xl-2, col-lg-2 block block5">Праве меню</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4 block, col-lg-8 block, col-md-6 block block6">Ліва частина підвалу</div>
+            <div class="col-xl-8 block, col-lg-4 block, col-md-6 block block7">Права частина підвалу</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

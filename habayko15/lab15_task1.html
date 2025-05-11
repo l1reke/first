@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 1 – Прості числа</title>
+</head>
+<body>
+  <h1>Завдання 1: Прості числа від 0 до 100</h1>
+  <div id="output"></div>
+
+  <script>
+    const output = document.getElementById("output");
+    function print(text) {
+      output.innerHTML += `<p>${text}</p>`;
+    }
+
+    let num = 2;
+    while (num <= 100) {
+      let isPrime = true;
+      for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+          isPrime = false;
+          break;
+        }
+      }
+      if (isPrime) print(num);
+      num++;
+    }
+  </script>
+</body>
+</html>
